@@ -1,0 +1,525 @@
+[
+    {
+        "id": "4a8d6bddfe65e106",
+        "type": "tab",
+        "label": "mini-project",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9d67f9dc5e59e7de",
+        "type": "group",
+        "z": "4a8d6bddfe65e106",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "a82d74de4f9c0b23",
+            "fbdf448d7c820122"
+        ],
+        "x": 114,
+        "y": 159,
+        "w": 412,
+        "h": 82
+    },
+    {
+        "id": "39d0a254678011a5",
+        "type": "group",
+        "z": "4a8d6bddfe65e106",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b09cc6861f5858ed",
+            "b8b6fb3613ef5644",
+            "4e10890b774d49c6",
+            "c47a289b390cfdee",
+            "aabc2a3da3351a91",
+            "7222ac2c088939ec",
+            "4acec50ec5faa5d4",
+            "6f23d82ce78cc1b9",
+            "bd3a3fc6c7f9acfc",
+            "4b755d861b4d1f91"
+        ],
+        "x": 114,
+        "y": 259,
+        "w": 452,
+        "h": 482
+    },
+    {
+        "id": "a82d74de4f9c0b23",
+        "type": "mqtt in",
+        "z": "4a8d6bddfe65e106",
+        "g": "9d67f9dc5e59e7de",
+        "name": "",
+        "topic": "carpark/left_space",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0387ffde9820f7cb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "fbdf448d7c820122"
+            ]
+        ]
+    },
+    {
+        "id": "b09cc6861f5858ed",
+        "type": "mqtt in",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "topic": "carpark/object_sensor1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0387ffde9820f7cb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 300,
+        "wires": [
+            [
+                "7222ac2c088939ec"
+            ]
+        ]
+    },
+    {
+        "id": "b8b6fb3613ef5644",
+        "type": "mqtt in",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "topic": "carpark/object_sensor2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0387ffde9820f7cb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 400,
+        "wires": [
+            [
+                "4acec50ec5faa5d4"
+            ]
+        ]
+    },
+    {
+        "id": "4e10890b774d49c6",
+        "type": "mqtt in",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "topic": "carpark/object_sensor3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0387ffde9820f7cb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 500,
+        "wires": [
+            [
+                "6f23d82ce78cc1b9"
+            ]
+        ]
+    },
+    {
+        "id": "c47a289b390cfdee",
+        "type": "mqtt in",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "topic": "carpark/object_sensor4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0387ffde9820f7cb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 600,
+        "wires": [
+            [
+                "bd3a3fc6c7f9acfc"
+            ]
+        ]
+    },
+    {
+        "id": "aabc2a3da3351a91",
+        "type": "mqtt in",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "topic": "carpark/object_sensor5",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "0387ffde9820f7cb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 700,
+        "wires": [
+            [
+                "4b755d861b4d1f91"
+            ]
+        ]
+    },
+    {
+        "id": "fbdf448d7c820122",
+        "type": "ui_gauge",
+        "z": "4a8d6bddfe65e106",
+        "g": "9d67f9dc5e59e7de",
+        "name": "",
+        "group": "e5b25d274f228f33",
+        "order": 5,
+        "width": 15,
+        "height": 5,
+        "gtype": "gage",
+        "title": "car spaces left",
+        "label": "Units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5",
+        "colors": [
+            "#ca3838",
+            "#e6e600",
+            "#00c400"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 420,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7222ac2c088939ec",
+        "type": "ui_gauge",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "group": "7d57c29220cb6864",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "car place space 1",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "4acec50ec5faa5d4",
+        "type": "ui_gauge",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "group": "7d57c29220cb6864",
+        "order": 2,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "car place space 2",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "6f23d82ce78cc1b9",
+        "type": "ui_gauge",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "group": "7d57c29220cb6864",
+        "order": 3,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "car place space 3",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "bd3a3fc6c7f9acfc",
+        "type": "ui_gauge",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "group": "7d57c29220cb6864",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "car place space 4",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "4b755d861b4d1f91",
+        "type": "ui_gauge",
+        "z": "4a8d6bddfe65e106",
+        "g": "39d0a254678011a5",
+        "name": "",
+        "group": "7d57c29220cb6864",
+        "order": 5,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "car place space 5",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 450,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "f65c7a5c.8a6e3",
+        "type": "tab",
+        "label": "Live Time and Date",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1eb4d06d.420391",
+        "type": "inject",
+        "z": "f65c7a5c.8a6e3",
+        "name": "Inject",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "2b4e67ce.2d4d8a",
+                "892b82b46d61d562"
+            ]
+        ]
+    },
+    {
+        "id": "2b4e67ce.2d4d8a",
+        "type": "function",
+        "z": "f65c7a5c.8a6e3",
+        "name": "Format Date",
+        "func": "var date = new Date(msg.payload);\n\nvar day = date.getDate();\nvar month = date.getMonth() + 1;\nvar year = date.getFullYear();\n\nvar hours = date.getHours();\nvar minutes = date.getMinutes();\nvar seconds = date.getSeconds();\n\nvar formattedDate = `${day}/${month}/${year}`;\nvar formattedTime = `${hours}:${minutes}:${seconds}`;\n\nmsg.payload = {\n    date: formattedDate,\n    time: formattedTime\n};\nvar time={\n    topic:msg.topic,\n    payload:{\n    hours:hours,\n    minutes:minutes,\n    seconds:seconds\n    }\n}\n\nreturn [msg,time];",
+        "outputs": 2,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "e9f2a2d8.2ca3a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e9f2a2d8.2ca3a",
+        "type": "ui_template",
+        "z": "f65c7a5c.8a6e3",
+        "group": "e5b25d274f228f33",
+        "name": "Time and Date",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "Current Time and Date:\nDate: {{msg.payload.date}}</p>\n<p>Time: {{msg.payload.time}}</p>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 520,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "892b82b46d61d562",
+        "type": "ui_template",
+        "z": "f65c7a5c.8a6e3",
+        "group": "e5b25d274f228f33",
+        "name": "",
+        "order": 3,
+        "width": 5,
+        "height": 5,
+        "format": "<!DOCTYPE html>\n<html>\n\n<body>\n\n  <canvas id=\"canvas\" width=\"9600\" height=\"9600\" style=\"background-color:#333\">\n    Sorry, your browser does not support canvas.\n  </canvas>\n\n  <script>\n    const canvas = document.getElementById(\"canvas\");\nconst ctx = canvas.getContext(\"2d\");\nlet radius = canvas.height / 2;\nctx.translate(radius, radius);\nradius = radius * 0.90\nsetInterval(drawClock, 1000);\n\nfunction drawClock() {\n  drawFace(ctx, radius);\n  drawNumbers(ctx, radius);\n  drawTime(ctx, radius);\n}\n\nfunction drawFace(ctx, radius) {\n  const grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);\n  grad.addColorStop(0, '#333');\n  grad.addColorStop(0.5, 'white');\n  grad.addColorStop(1, '#333');\n  ctx.beginPath();\n  ctx.arc(0, 0, radius, 0, 2*Math.PI);\n  ctx.fillStyle = 'white';\n  ctx.fill();\n  ctx.strokeStyle = grad;\n  ctx.lineWidth = radius*0.1;\n  ctx.stroke();\n  ctx.beginPath();\n  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);\n  ctx.fillStyle = '#333';\n  ctx.fill();\n}\n\nfunction drawNumbers(ctx, radius) {\n  ctx.font = radius*0.15 + \"px arial\";\n  ctx.textBaseline=\"middle\";\n  ctx.textAlign=\"center\";\n  for(let num = 1; num < 13; num++){\n    let ang = num * Math.PI / 6;\n    ctx.rotate(ang);\n    ctx.translate(0, -radius*0.85);\n    ctx.rotate(-ang);\n    ctx.fillText(num.toString(), 0, 0);\n    ctx.rotate(ang);\n    ctx.translate(0, radius*0.85);\n    ctx.rotate(-ang);\n  }\n}\n\nfunction drawTime(ctx, radius){\n    const now = new Date();\n    let hour = now.getHours();\n    let minute = now.getMinutes();\n    let second = now.getSeconds();\n    //hour\n    hour=hour%12;\n    hour=(hour*Math.PI/6)+\n    (minute*Math.PI/(6*60))+\n    (second*Math.PI/(360*60));\n    drawHand(ctx, hour, radius*0.5, radius*0.07);\n    //minute\n    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));\n    drawHand(ctx, minute, radius*0.8, radius*0.07);\n    // second\n    second=(second*Math.PI/30);\n    drawHand(ctx, second, radius*0.9, radius*0.02);\n}\n\nfunction drawHand(ctx, pos, length, width) {\n    ctx.beginPath();\n    ctx.lineWidth = width;\n    ctx.lineCap = \"round\";\n    ctx.moveTo(0,0);\n    ctx.rotate(pos);\n    ctx.lineTo(0, -length);\n    ctx.stroke();\n    ctx.rotate(-pos);\n}\n  </script>\n\n</body>\n\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 400,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0387ffde9820f7cb",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e5b25d274f228f33",
+        "type": "ui_group",
+        "name": "",
+        "tab": "ca828849addacbbe",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7d57c29220cb6864",
+        "type": "ui_group",
+        "name": "carPark",
+        "tab": "ca828849addacbbe",
+        "order": 2,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ca828849addacbbe",
+        "type": "ui_tab",
+        "name": "carPark",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
